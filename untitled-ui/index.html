@@ -17,14 +17,14 @@
 <body>
     <section class="page-wrapper col-lg-12">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-8 col-sm-12">
                 <div class="form-title">
                     <div class="d-flex">
                         <img src="assets/img/untitled_logo.png" alt="logo image" class="img-fluid">
                         <h1 class="logo-name">Untitled UI</h1>
                     </div>
                 </div>
-
+                <!-- form section -->
                 <div class="form-wrapper">
                     <div class="form-only">
                         <h2 class="welcome-text">Welcome back, Olivia</h2>
@@ -54,14 +54,36 @@
                                 <a href="#" class="forgot">Forgot password</a>
                             </div>
                             <div class="d-grid gap-2">
-                                <button class="btn btn-secondary login" type="submit" name="login">Log In</a>
+                                <button class="btn btn-secondary login" type="submit" name="login">Log In</button>
+                                <div class="account-create">Don't have an account? <b><a href="#">Sign up for free</a></b></div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-
+            <!-- carousel section -->
+            <div class="col-lg-6 col-md-4">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="bg-carousel" style="background: url(https://images.pexels.com/photos/7121573/pexels-photo-7121573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="bg-carousel" style="background: url(https://images.pexels.com/photos/7121555/pexels-photo-7121555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="bg-carousel" style="background: url(https://images.pexels.com/photos/7121556/pexels-photo-7121556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);"></div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </section>

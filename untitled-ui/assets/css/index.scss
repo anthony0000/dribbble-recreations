@@ -170,3 +170,31 @@ input[type="checkbox"] {
 input[type="checkbox"]:focus {
     background: $secondary_color;
 }
+
+.account-create{
+    width: 100%;
+    margin-top: $mt + 10;
+    text-align: center;
+}
+
+.account-create a{
+    margin-left: $ml - 5;
+}
+
+.carousel{
+    height: 800px;
+}
+.carousel-inner{
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+}
+.bg-carousel{
+    height: 100%;
+    width: 100% !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
