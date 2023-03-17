@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 70px 100px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body::-webkit-scrollbar-track {
@@ -73,6 +73,7 @@ a:hover {
     padding: 50px 20%;
     display: flex;
     justify-content: center;
+    overflow: auto;
 }
 
 .welcome-text {
@@ -182,7 +183,7 @@ input[type="checkbox"]:focus {
 }
 
 .carousel{
-    height: 800px
+    height: 100%
 }
 
 .carousel-inner{
@@ -218,4 +219,79 @@ input[type="checkbox"]:focus {
 .carousel-control-prev-icon,.carousel-control-next-icon{
     height: 20px;
     margin-top: $mt - 5;
+}
+.carousel-text-holder{
+    padding: 10px 50px;
+    padding-top: 65%;
+}
+.carousel-text-holder h2{
+    color: $primary_color;
+    font-weight: bold;
+}
+.title-group{
+    margin-top: $mt + 50;
+    color: $primary_color;
+}
+.founder-name{
+    font-weight: bolder;
+}
+.founder{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.company-name{
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    body {
+        padding: 50px 20px;
+    }
+    .carousel-responsive{
+        display: none;
+    }
+    .form-wrapper{
+        padding: 25px 5%;
+    }
+    .forgot{
+        font-size: $font-size - 3;
+    }
+    .remember-text{
+        font-size: $font-size - 3;
+    }
+}
+@media only screen and (min-width: 479px) and (max-width: 768px) {
+    body {
+        padding: 50px 20px;
+    }
+    .carousel-responsive{
+        display: none;
+    }
+    .form-wrapper{
+        padding: 25px 10%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        padding: 50px 20px;
+    }
+    .carousel-responsive{
+        display: none;
+    }
+    .form-wrapper{
+        padding: 25px 10%;
+    }
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+    body {
+        padding: 50px 20px;
+    }
+    .form-wrapper{
+        padding: 25px 10%;
+    }
+    .carousel-text-holder h2{
+        font-size: $font-size + 8;
+    }
 }
